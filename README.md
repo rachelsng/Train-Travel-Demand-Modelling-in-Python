@@ -51,7 +51,7 @@ Coefficient of ticket price is now an unbiased estimator following the IV2SLS wh
 
 <b> Model Discussion</b>
 
-Overall, after all proper adjustments have been made, this simple model allows us to quantify important and specific findings about demand for train travel.
+Overall, after all proper adjustments have been made, this simple model allows us to quantify important and specific findings about demand for train travel. Importantly, this model can be used to directly forecast demand in the future and allows the train company to plan supply of trains accordingly. 
 
 <b>Generalisable Observations</b>
 1. Each 1% increase in price, results in a -0.3% decrease in demand, roughly 1/3rd the impact 
@@ -64,7 +64,9 @@ Overall, after all proper adjustments have been made, this simple model allows u
 2. Normal cabins, despite being the most sold & cheapest, are actually -14% less popular than premium ones (all else held constant)
 3. With the baseline as Train A, Train B plys the most popular route (15% higher demand), while Train N operates the least popular route (-14% demand)
 
-Importantly, this model can be used to directly forecast demand in the future and allows the train company to plan supply of trains accordingly. 
+<b>Limitations</b>
+
+The overall model fit remains low, with final reported R-squared being just 0.126 (a value closer to 1 would indicate a better fit). This strongly suggest that something more than a linear model may be needed to model this relationship better. 
 
 ## Files
 - *01_Data_Preprocessing_and_EDA.ipynb*: Notebook for data pre-processing and preliminary exploration of dataset.
