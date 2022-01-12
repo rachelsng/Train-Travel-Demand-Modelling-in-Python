@@ -33,7 +33,7 @@ This dataset is a csv file containing 1 target variable (*num_seats_total* i.e. 
 
 <b>Demand Modelling</b>
 
-Statsmodels OLS
+Statsmodels OLS (Ordinary Least Squares, i.e. Simple Linear Regression)
 - Demand is first modelled with OLS
 - Price is then modelled with OLS using an additional instrumental variable.
 - Price is re-forecasted and fed back into the Demand equation
@@ -45,9 +45,9 @@ Linearmodels
 <b>Packages used</b>: pandas, numpy, seaborn, linearmodels, statsmodels
 
 ## Findings
-<b> Importance of 2SLS </b>
+<b> Importance of 2SLS</b>
 
-Coefficient of ticket price is now an unbiased estimator following the IV2SLS which is critical for causal analysis and decision-making.Coefficient changed from -0.211 (simple OLS) to -0.342 (IV2SLS), suggesting that endogeneity problems would have caused significant errors in estimation with only Simple Linear Regression.
+Coefficient of ticket price is now an unbiased estimator following the IV2SLS which is critical for causal analysis and decision-making. Coefficient changed from -0.211 (simple OLS) to -0.342 (IV2SLS), suggesting that endogeneity problems would have caused significant errors in estimation with only Simple Linear Regression.
 
 <b> Model Discussion</b>
 
@@ -69,6 +69,8 @@ Importantly, this model can be used to directly forecast demand in the future an
 ## Files
 - *01_Data_Preprocessing_and_EDA.ipynb*: Notebook for data pre-processing and preliminary exploration of dataset.
 - *02_Demand_Modelling_with_2SLS.ipynb*: Linear regression model with checks for endogeneity and corrections made accordingly.
+
+HTML versions of both files have also been included for convenience.
 
 ## Credits
 This dataset was provided by the National University of Singapore.
